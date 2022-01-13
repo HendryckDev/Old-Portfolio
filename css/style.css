@@ -43,7 +43,7 @@ body {
     margin: -17em 0 3rem 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.15rem;
-    background-color: #f0e9e998;
+    background-color: #f0e9e98e;
     color: #000;
 }
 
@@ -759,7 +759,7 @@ textarea {
 }
 
 /* For large devices */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1224px) {
     .header,
     .main,
     .footer__container {
