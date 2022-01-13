@@ -9,9 +9,9 @@
 <p align="center">
   <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript"/>
 
-  <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="Css"/>
+  <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=%23F7DF1E" alt="Css"/>
 
-  <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="Html"/>
+  <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=%23F7DF1E" alt="Html"/>
 
    <img src="https://img.shields.io/badge/Visual%20Studio%20Code-%23323330.svg?style=for-the-badge&logo=visual-studio-code&logoColor=blue" alt="VScode"/>
 
