@@ -1,6 +1,5 @@
 <div align="center">
   <h1> 📜 Portfólio </h1>
-  <img height=150 width=250 src="./public/logo.png"/>
 </div>
 <br/>
 <p align="center">
@@ -10,9 +9,9 @@
 <p align="center">
   <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript"/>
 
-  <img src="https://img.shields.io/badge/nestjs-%23323330.svg?style=for-the-badge&logo=nestjs&logoColor=white" alt="NextJs"/>
+  <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="Css"/>
 
-  <img src="https://img.shields.io/badge/figma-%23323330.svg?style=for-the-badge&logo=figma&logoColor=orange" alt="Figma"/>
+  <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="Html"/>
 
    <img src="https://img.shields.io/badge/Visual%20Studio%20Code-%23323330.svg?style=for-the-badge&logo=visual-studio-code&logoColor=blue" alt="VScode"/>
 
@@ -22,7 +21,7 @@
 
 <br>
 
-## 🧪 Tecnologias
+## 🧑‍💻 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
