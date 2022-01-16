@@ -45,6 +45,8 @@ body {
     font-size: 1.15rem;
     background-color: #f0e9e98e;
     color: #000;
+    min-width: 99vw;
+    min-height: 100vh;
 }
 
 ul {
@@ -62,7 +64,7 @@ img {
 
 /* ================== REUSABLE CSS CLASSES ================== */
 .section {
-    padding: 2rem 0 4rem;
+    padding: 2rem 4rem;
 }
 
 .section__title{
@@ -86,7 +88,7 @@ img {
 
 /* ================== LAYOUT ================== */
 .container {
-    max-width: 768;
+    max-width: 768rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
@@ -234,10 +236,6 @@ img {
 
 .home__img {
     width: 300px;
-}
-
-.home__data {
-    grid-column: 1/3;
 }
 
 .home__title {
@@ -608,7 +606,9 @@ textarea {
         grid-template-columns: .25fr 3fr;
     }
     .home__img {
-        width: 240px;
+        width: 82.5vw;
+        position: relative;
+        bottom: 3.3rem;
     }
     .home__description {
         width: 280px;
@@ -638,17 +638,15 @@ textarea {
         grid-template-columns: max-content 1fr 1fr;
     }
     .home__data {
-        grid-column: initial;
         position: relative;
-        right: 10em;
         width: 15rem;
     }
     .home__img {
         justify-self: center;
-        width: 240px;
+        width: 52.2vw;
         order: 1;
         position: relative;
-        bottom: 17em;
+        bottom: 25.3em;
         left: 19em;
 
     }
@@ -714,7 +712,13 @@ textarea {
         margin: 0;
     }
     .home__img {
-        width: 270px;
+        width: 50vw;
+        position: relative;
+        bottom: 30.1rem;
+    }
+    .home__data {
+        right: 23em;
+        width: 15rem;
     }
     .about__container {
         column-gap: 5rem;
@@ -742,47 +746,30 @@ textarea {
     .portfolio__content {
         align-items: center;
     }
-    .footer__bg {
-        padding: .5rem 0 .5rem;
-        position: relative;
-        top: 3rem;
-    }
-    .footer__socials {
-        justify-self: flex-end;
-    }
-    .footer__social {
-        font-size: 1.25rem;
-    }
-    .footer__title {
-        font-size: 1.5rem;
-    }
 }
 
 /* For large devices */
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
     .header,
     .main,
     .footer__container {
         padding: 0;
     }
     .home__container {
-        margin-top: 10rem;
-        height: 70rem;
+        margin-top: 4.4rem;
+        height: 60rem;
     }
     .home__img {
-        width: 920px;
+        max-width: 100vh;
         position: relative;
-        left: 57.7rem;
-        bottom: 43.2rem;
+        left: 57.9rem;
     }
     .home__data {
         width: 600px;
         left: -45rem;
-        bottom: 10rem;
     }
     .home__social {
         margin-left: 5rem;
-        bottom: 10rem;
         position: relative;
         font-size: 5rem;
     }
@@ -790,16 +777,17 @@ textarea {
         font-size: 3.5rem;
     }
     .about__data {
-        margin-left: 35rem;
+        margin: auto;
         width: 600px;
     }
     .about__img {
         width: 370px;
+        margin: auto;
     }
     .about__buttons {
-        margin-left: 60rem;
+        margin-left: 63rem;
         position: relative;
-        bottom: 34rem;
+        bottom: 37rem;
     }
     .services__container {
         grid-template-columns: repeat(3, 528px);
@@ -812,8 +800,7 @@ textarea {
         padding: 6rem 0 2rem 2.5rem;
     }
     .portfolio__img {
-        width: 560px;
-        margin-left: 15rem;
+        width: 660px;
     }
     .portfolio__description {
         width: 600px;
@@ -827,7 +814,7 @@ textarea {
     }
     .contact__form {
         width: 650px;
-        margin-left: 37rem;
+        margin: auto;
         margin-top: 5rem;
         margin-bottom: 4rem;
     }
@@ -843,22 +830,5 @@ textarea {
     }
     .nav__logo {
         margin-left: 8.8rem;
-    }
-    .footer__bg {
-        padding: 3rem 0rem 2.5rem;
-        position: relative;
-        height: 5rem;
-    }
-    .footer__copy {
-        position: relative;
-        bottom: 2.5rem;
-    }
-    .footer__social {
-        position: relative;
-        bottom: 5rem;
-        font-size: 1.7rem;
-    }
-    .footer__container {
-        height: 0;
     }
 }
