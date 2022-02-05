@@ -47,6 +47,8 @@ body {
     color: #000;
     min-width: 99vw;
     min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 ul {
@@ -202,10 +204,10 @@ img {
 }
 
 .home__container {
-    grid-template-columns: .5fr 3fr;
     padding-top: 10.5rem;
     align-items: center;
     animation: movedown 2.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1;
+    position: relative;
 }
 
 @keyframes movedown {
@@ -222,10 +224,13 @@ img {
     display: grid;
     grid-template-columns: max-content;
     row-gap: 1rem;
+    position: absolute;
 }
 
 .home__social-icon {
     position: relative;
+    right: 2em;
+    top: 3em;
     font-size: 1.65rem;
     color: #7B2CBF;
 }
@@ -235,7 +240,16 @@ img {
 }
 
 .home__img {
-    width: 300px;
+    width: 280px;
+    position: absolute;
+    left: 6.6em;
+    top: 6.1em;
+}
+
+.home__data {
+    position: relative;
+    top: 6em;
+    margin-bottom: 10em;
 }
 
 .home__title {
@@ -576,7 +590,7 @@ textarea {
 /* ================== SCROLL BAR ================== */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -633,42 +647,38 @@ textarea {
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px) {
-    .home__content {
-        grid-template-columns: max-content 1fr 1fr;
-    }
+@media screen and (min-width: 595px) {
     .home__data {
         position: relative;
-        width: 15rem;
+        width: 20rem;
     }
     .home__img {
         justify-self: center;
         width: 52.2vw;
         order: 1;
-        position: relative;
-        bottom: 25.3em;
-        left: 19em;
-
+        position: absolute;
+        left: 12.6em;
     }
     .button {
         font-size: .9rem;
     }
     .home__container {
-        margin-bottom: -7rem;
+        margin-bottom: 0rem;
     }
     .about__img {
         position: relative;
-        right: 10rem;
-        top: 7rem;
+        top: 5rem;
+        right: 10em;
     }
     .about__data{
         position: relative;
-        left: 24.5rem;
+        margin: auto;
+        left: 7em;
         bottom: 20rem;
         width: 310px;
     }
     .skills_container {
-        margin-top: -15rem;
+        margin-top: -16rem;
     }
     .portfolio__content {
         grid-template-columns: repeat(2, 1fr);
@@ -712,14 +722,22 @@ textarea {
         margin: 0;
     }
     .home__img {
-        width: 50vw;
+        width: 740px;
         position: relative;
-        bottom: 30.1rem;
+        left: 9rem;
+        top: -36.5rem;
     }
     .home__data {
-        right: 23em;
-        width: 15rem;
+        width: 25rem;
+        top: 15rem;
+        left: 7rem;
     }
+
+    .home__social {
+        left: 5rem;
+        top: 25rem;
+    }
+
     .about__container {
         column-gap: 5rem;
     }
@@ -727,9 +745,11 @@ textarea {
         width: 350px;
     }
     .about__data {
-        margin-left: 1rem;
         bottom: 24rem;
+        margin: auto;
+        left: 13rem;
     }
+
     .services__container {
         grid-template-columns: repeat(3, 228px);
         justify-content: center;
@@ -755,42 +775,55 @@ textarea {
     .footer__container {
         padding: 0;
     }
+    .header {
+        max-width: 100%;
+    }
     .home__container {
         margin-top: 4.4rem;
         height: 60rem;
     }
     .home__img {
-        max-width: 100vh;
+        width: 100%;
         position: relative;
-        left: 57.9rem;
+        top: -51rem;
+        left: 35.5rem;
     }
     .home__data {
         width: 600px;
-        left: -45rem;
+        top: 0rem;
     }
     .home__social {
-        margin-left: 5rem;
         position: relative;
+        top: 7rem;
         font-size: 5rem;
     }
     .section__title {
         font-size: 3.5rem;
+        align-items: center;
+        margin: 0;
     }
     .about__data {
-        margin: auto;
         width: 600px;
+        margin: auto;
+        left: 10rem;
     }
     .about__img {
         width: 370px;
         margin: auto;
+        right: 25rem;
     }
     .about__buttons {
-        margin-left: 63rem;
+        margin-left: 37.5rem;
         position: relative;
         bottom: 37rem;
     }
+    .skills {
+        position: relative;
+        right: 16rem;
+
+    }
     .services__container {
-        grid-template-columns: repeat(3, 528px);
+        grid-template-columns: repeat(3, 328px);
         justify-content: center;
     }
     .services__icon {
@@ -826,9 +859,43 @@ textarea {
         margin-left: 14rem;
     }
     .nav {
-        max-width: 1670px;
+        max-width: 100%;
     }
     .nav__logo {
         margin-left: 8.8rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header {
+        max-width: 1280;
+    }
+    .home__container {
+        margin-top: 4.4rem;
+        height: 60rem;
+    }
+    .home__img {
+        max-width: 100vh;
+        position: relative;
+        left: 35rem;
+    }
+    .home__data {
+        width: 600px;
+    }
+    .home__social {
+        margin-left: 5rem;
+        position: relative;
+        font-size: 5rem;
+    }
+    .home__data {
+        left: 15rem;
+    }
+    .about__buttons {
+        margin: auto;
+        right: 3.5rem;
+    }
+    .skills__data {
+        position: relative;
+        left: 15rem;
     }
 }
